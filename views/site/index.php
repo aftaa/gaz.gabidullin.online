@@ -27,6 +27,7 @@ $this->title = 'Тестовое задание "PHP-программист"';
 <code>./yii migrate</code>
 
 <h4>Импортируйте лог-файлы в БД</h4>
+<h5>лог-файлы лежат в папке /test-data/</h5>
 
 <code>./yii import/parse/</code>
 
