@@ -13,6 +13,8 @@ class ParseLogIntoDb
      */
     public function logIntoDb(array $rows)
     {
-
+        $files2models = [
+            'test-data/log1.txt' =>
+        ];
     }
 }

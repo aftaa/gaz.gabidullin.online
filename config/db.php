@@ -6,9 +6,15 @@ return [
     'username' => 'gaz',
     'password' => 'gaz',
     'charset' => 'utf8',
+    'schemaMap' => [
+        'pgsql' => [
+            'class' => 'yii\db\pgsql\Schema',
+            'defaultSchema' => 'public'
+        ]
+    ],
 
     // Schema cache options (for production environment)
-    //'enableSchemaCache' => true,
-    //'schemaCacheDuration' => 60,
-    //'schemaCache' => 'cache',
+    'enableSchemaCache' => true,
+    'schemaCacheDuration' => 60,
+    'schemaCache' => 'cache',
 ];
