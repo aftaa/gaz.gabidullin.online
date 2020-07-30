@@ -23,6 +23,6 @@
 
 <h4>Проконтролируйте результат</h4>
 
-<a href="/site/table1">Таблица 1</a><br>
-<a href="/site/table2">Таблица 2</a><br>
-<a href="/site/query">Запрос</a><br>
+<a href="https://gaz.gabidullin.online/site/table1">Таблица 1</a><br>
+<a href="https://gaz.gabidullin.online/site/table2">Таблица 2</a><br>
+<a href="https://gaz.gabidullin.online/site/query">Запрос</a><br>
