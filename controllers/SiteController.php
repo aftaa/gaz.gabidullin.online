@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\service\RowsAndPagesShowService;
+use yii\db\Exception;
 use yii\web\Controller;
 
 class SiteController extends Controller
@@ -55,9 +56,12 @@ class SiteController extends Controller
 
     /**
      * @return string
+     * @throws Exception
      */
     public function actionQuery()
     {
-        return $this->render('query');
+        return $this->render('query',
+            (new RowsAndPagesShowService)->getTestTaskQueryRenderData()
+        );
     }
 }

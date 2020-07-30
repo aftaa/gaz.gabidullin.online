@@ -6,6 +6,7 @@ namespace app\service;
 
 use app\models\LogTable1;
 use app\models\LogTable2;
+use Yii;
 use yii\data\Pagination;
 
 class RowsAndPagesShowService
@@ -36,5 +37,18 @@ class RowsAndPagesShowService
             ->limit($pages->limit)
             ->all();
         return compact('rows', 'pages');
+    }
+
+    public function getTestTaskQueryRenderData()
+    {
+        $sql = <<<SQL
+            SELECT t1.ip, -- t2.browser, t2.os, t1.url_from, t1.url_to,
+                COUNT(DISTINCT t1.url_to) AS cnt
+            FROM log_table1 t1 JOIN log_table2 t2 ON t1.ip=t2.ip
+            GROUP BY t1.ip 
+        SQL;
+
+        $result = Yii::$app->getDb()->createCommand($sql)->queryAll();
+        return compact('result', 'sql');
     }
 }

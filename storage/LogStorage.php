@@ -7,6 +7,7 @@ use app\builder\LogRowBuilderInterface;
 use app\entity\logrow\LogRowInterface;
 use DomainException;
 use RuntimeException;
+use SplFileObject;
 
 /**
  * Class LogStorage1
@@ -55,10 +56,5 @@ class LogStorage
             }
         }
         return $rows;
-    }
-
-    public function parse1()
-    {
-        
     }
 }
