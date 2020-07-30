@@ -28,6 +28,14 @@ class Ip
     /**
      * @return string
      */
+    public function __toString(): string
+    {
+        return $this->getIp();
+    }
+
+    /**
+     * @return string
+     */
     public function getIp(): string
     {
         return $this->ip;

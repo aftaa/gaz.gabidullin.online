@@ -24,6 +24,14 @@ class Time
     /**
      * @return string
      */
+    public function __toString(): string
+    {
+        return $this->getTime();
+    }
+
+    /**
+     * @return string
+     */
     public function getTime(): string
     {
         return $this->time;

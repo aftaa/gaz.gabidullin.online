@@ -28,6 +28,14 @@ class Url
     /**
      * @return string
      */
+    public function __toString(): string
+    {
+        return $this->getUrl();
+    }
+
+    /**
+     * @return string
+     */
     public function getUrl(): string
     {
         return $this->url;

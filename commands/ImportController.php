@@ -2,15 +2,16 @@
 
 namespace app\commands;
 
+use app\service\ParseLogIntoDbService;
 use app\storage\LogStorage1;
 use yii\console\Controller;
 use yii\console\ExitCode;
 
 /**
- * Class ParserController
+ * Class ImportController
  * @package app\commands
  */
-class ParserController extends Controller
+class ImportController extends Controller
 {
     /**
      * @return int
@@ -24,7 +25,7 @@ class ParserController extends Controller
 
     public function actionParse()
     {
-        $parser = new LogStorage1('test-data/log1.txt', LogStorage1::DONT_SKIP_ERRORS);
-        $rows = $parser->parse();
+        $parser = new ParseLogIntoDbService;
+        $parser->logIntoDb();
     }
 }

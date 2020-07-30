@@ -30,6 +30,14 @@ class Date
     /**
      * @return string
      */
+    public function __toString(): string
+    {
+        return $this->getDate();
+    }
+
+    /**
+     * @return string
+     */
     public function getDate(): string
     {
         return $this->date;

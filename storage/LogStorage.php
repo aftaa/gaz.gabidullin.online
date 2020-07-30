@@ -38,7 +38,7 @@ class LogStorage
      * @param LogRowBuilderInterface $builder
      * @return array|LogRowInterface[]
      */
-    public function parse(LogRowBuilderInterface $builder)
+    public function parse(LogRowBuilderInterface $builder): array
     {
         $fileContents = file_get_contents($this->logfile);
         $file = explode("\n", $fileContents);

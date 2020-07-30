@@ -14,7 +14,7 @@ class LogRow2Builder implements LogRowBuilderInterface
     {
         return (new LogRow2)
             ->setIp(new Ip(array_shift($row)))
-            ->set(new Url(array_shift($row)))
-            ->setUrlTo(new Url(array_shift($row)));
+            ->setBrowserName(array_shift($row))
+            ->setOsName(array_shift($row));
     }
 }
