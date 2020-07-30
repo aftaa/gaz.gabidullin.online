@@ -6,6 +6,10 @@ $this->title = 'Тестовое задание "PHP-программист"';
 
 ?>
 
+<code><pre>
+    <?= $sql ?>
+</pre></code>
+
 <table class="table table-hover table-striped">
     <thead>
     <tr>
@@ -21,10 +25,10 @@ $this->title = 'Тестовое задание "PHP-программист"';
         <?php foreach ($result as $r): ?>
         <tr>
             <td><?= $r['ip'] ?></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><?= $r['browser'] ?></td>
+            <td><?= $r['os'] ?></td>
+            <td><?= $r['url_first'] ?></td>
+            <td><?= $r['url_last'] ?></td>
             <td><?= $r['cnt'] ?></td>
         </tr>
         <?php endforeach ?>
