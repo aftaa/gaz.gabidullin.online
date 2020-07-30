@@ -1,0 +1,53 @@
+94.102.56.151|Mozilla|Ubuntu
+78.46.61.245|Chrome|Ubuntu
+94.102.56.151|Mozilla|Ubuntu
+94.102.56.151|Mozilla|Ubuntu
+94.102.56.151|Mozilla|Ubuntu
+129.191.25.155|MSIE|Windows NT 5.2
+129.191.25.155|MSIE|Windows NT 5.2
+129.191.25.155|MSIE|Windows NT 5.2
+129.191.25.155|MSIE|Windows NT 5.2
+129.191.25.155|MSIE|Windows NT 5.2
+129.191.25.155|MSIE|Windows NT 5.2
+129.191.25.155|MSIE|Windows NT 5.2
+94.102.56.151|Opera|Ubuntu 16
+94.102.56.151|Opera|Ubuntu 16
+94.102.56.151|Opera|Ubuntu 16
+129.191.25.155|MSIE|Windows NT 5.2
+129.191.25.155|MSIE|Windows NT 5.2
+129.191.25.155|MSIE|Windows NT 5.2
+94.102.56.151|Mozilla|Ubuntu 16
+94.102.56.151|Mozilla|Ubuntu 16
+94.102.56.151|Mozilla|Ubuntu 16
+78.46.61.245|Chrome|Ubuntu 16
+78.46.61.245|Chrome|Ubuntu 16
+94.102.56.151|Mozilla|Ubuntu 16
+94.102.56.151|Mozilla|Ubuntu 16
+94.102.56.151|Mozilla|Ubuntu 16
+78.46.61.245|Chrome|Ubuntu 16
+78.46.61.245|Chrome|Ubuntu 16
+78.46.61.245|Chrome|Ubuntu 16
+78.46.61.245|Chrome|Ubuntu 16
+78.46.61.245|Chrome|Ubuntu 16
+78.46.61.245|Chrome|Ubuntu 16
+94.102.56.151|Opera|Windows NT 5.1
+78.46.61.245|Opera|Windows NT 5.1
+78.46.61.245|MSIE|Windows NT 5.1
+94.102.56.151|MSIE|Ubuntu 18
+94.102.56.151|MSIE|Ubuntu 18
+94.102.56.151|Mozilla|Ubuntu 18
+78.46.61.245|Mozilla|Windows NT 5.1
+78.46.61.245|Mozilla|Windows NT 5.1
+78.46.61.245|Chrome|Windows NT 5.1
+94.102.56.151|Chrome|Ubuntu 20
+78.46.61.245|Mozilla|Ubuntu 20
+78.46.61.245|Mozilla|Ubuntu 20
+94.102.56.151|Mozilla|Ubuntu 20
+94.102.56.151|Chrome|Ubuntu 20
+94.102.56.151|Chrome|Ubuntu 20
+78.46.61.245|Chrome|Ubuntu 20
+78.46.61.245|Opera|Ubuntu 16
+78.46.61.245|Opera|Ubuntu 16
+78.46.61.245|MSIE|Ubuntu 16
+78.46.61.245|MSIE|Ubuntu 16
+78.46.61.245|MSIE|Ubuntu 16
