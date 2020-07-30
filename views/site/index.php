@@ -6,6 +6,8 @@ $this->title = 'Тестовое задание "PHP-программист"';
 
 ?>
 
+<a href="https://gaz.gabidullin.online/">https://gaz.gabidullin.online/</a>
+
 <h2>БД</h2>
 
 Хост: 127.0.0.1<br>
@@ -33,3 +35,8 @@ $this->title = 'Тестовое задание "PHP-программист"';
 <a href="/site/table1">Таблица 1</a><br>
 <a href="/site/table2">Таблица 2</a><br>
 <a href="/site/query">Запрос</a><br>
+
+
+<br>
+<img src="https://api.aftaa.ru/favicons/github.ico" alt="" width="16" height="16">
+<a href="https://github.com/aftaa/gaz.gabidullin.online">https://github.com/aftaa/gaz.gabidullin.online</a>

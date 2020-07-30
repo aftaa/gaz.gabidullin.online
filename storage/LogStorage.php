@@ -56,4 +56,9 @@ class LogStorage
         }
         return $rows;
     }
+
+    public function parse1()
+    {
+        
+    }
 }

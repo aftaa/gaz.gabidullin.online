@@ -20,7 +20,7 @@ class ParseLogIntoDbService
      */
     public function logIntoDb()
     {
-        Yii::$app->getDb()->createCommand('TRUNCATE table1, table2'); // TODO может и не очищать таблицы?
+        Yii::$app->getDb()->createCommand('TRUNCATE log_table1, log_table2')->execute(); // TODO может и не очищать таблицы?
 
         $filename = 'test-data/log1.txt';
         $storage = new LogStorage($filename);

@@ -18,7 +18,7 @@ class ImportController extends Controller
      */
     public function actionIndex()
     {
-        echo "Use './yii parser/parse'\n";
+        echo "Use './yii parser/parse'\n\n";
 
         return ExitCode::OK;
     }
@@ -27,5 +27,9 @@ class ImportController extends Controller
     {
         $parser = new ParseLogIntoDbService;
         $parser->logIntoDb();
+
+        echo "Import completed\n\n";
+
+        return ExitCode::OK;
     }
 }

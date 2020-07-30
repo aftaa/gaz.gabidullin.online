@@ -2,13 +2,8 @@
 
 namespace app\controllers;
 
-use Yii;
-use yii\filters\AccessControl;
+use app\service\RowsAndPagesShowService;
 use yii\web\Controller;
-use yii\web\Response;
-use yii\filters\VerbFilter;
-use app\models\LoginForm;
-use app\models\ContactForm;
 
 class SiteController extends Controller
 {
@@ -38,14 +33,29 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+    /**
+     * @return string
+     */
     public function actionTable1()
     {
-        return $this->render('table1');
+        return $this->render('table1',
+            (new RowsAndPagesShowService)->getRenderData1()
+        );
     }
+
+    /**
+     * @return string
+     */
     public function actionTable2()
     {
-        return $this->render('table2');
+        return $this->render('table2',
+            (new RowsAndPagesShowService)->getRenderData2()
+        );
     }
+
+    /**
+     * @return string
+     */
     public function actionQuery()
     {
         return $this->render('query');
