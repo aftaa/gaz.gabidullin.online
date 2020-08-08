@@ -42,19 +42,22 @@ class RowsAndPagesShowService
     public function getTestTaskQueryRenderData()
     {
         $sql = <<<SQL
-SELECT t1.ip, t2.browser, t2.os,
+SELECT t1.ip, t1.ip AS ip, t2.browser, t2.os,
     COUNT(DISTINCT t1.url_to) AS cnt,
         (
             SELECT t1.url_from                               
             FROM log_table1 t1 
             WHERE t1.time = (SELECT MIN(time) FROM log_table1)
               AND t1.date = (SELECT MIN(date) FROM log_table1)
+              AND ip = t1.ip
+                
         ) AS url_first,
         (
             SELECT t1.url_to                               
             FROM log_table1 t1 
             WHERE t1.time = (SELECT MAX(time) FROM log_table1)
               AND t1.date = (SELECT MAX(date) FROM log_table1)
+              AND ip = t1.ip
         ) AS url_last
     FROM log_table1 t1 JOIN log_table2 t2 ON t1.ip=t2.ip
     GROUP BY t1.ip, t2.browser, t2.os 
